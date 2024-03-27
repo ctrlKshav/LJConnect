@@ -1,0 +1,238 @@
+﻿/* 
+.block{
+    margin-top: 3em;
+    height: 70vh;
+    width: 90vw;
+    margin-bottom: 3em;
+    background-color: lightcyan;
+    padding: 20px;
+}
+
+
+.inside-block{
+    height: 50vh;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: gray;
+}
+
+.image{
+    height: 350px;
+    width: 500px;
+}
+
+.text:hover{
+    transform: scale(1.05);
+    transition: all 1s ease-in-out 0s;
+}
+.image:hover{
+    transform: scale(1.05);
+    transition: all 1s ease-in-out 0s;
+}
+
+#hiddenDiv{
+    font-size: 1rem;
+    color: grey;
+    display: none;
+    height: 80vh;
+    width: 90vw;
+    background-color: lightcyan;
+    margin: auto;
+}
+
+.text:active{
+    background-color: aqua;
+}
+
+.hidden-title{
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: center;
+    margin: auto;
+} */
+
+/* Keeping original styles */
+.block {
+    margin-top: 3em;
+    height: auto;
+    width: 90vw;
+    margin-bottom: 3em;
+    background-color: lightcyan;
+}
+
+.inside-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0px 20px; */
+}
+
+.text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: gray;
+    width: 50%;
+    height: 30vh;
+    padding: 20px;
+}
+
+.image {
+    height: auto;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.image img{
+    height: 50vh;
+    width: 50%;
+    margin-left: 20px;
+}
+
+.text:hover,
+.image:hover {
+    transform: scale(1.05);
+    transition: all 1s ease-in-out 0s;
+}
+
+.hiddenDiv {
+    font-size: 1rem;
+    color: grey;
+    height: 100vh;
+    width: 90vw;
+    background-color: cyan;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.slideshow-container{
+    max-width: 90vw;
+    margin: auto;
+    background-color: aquamarine;
+    margin-top: 5rem;
+}
+
+.text:active {
+    background-color: aqua;
+}
+
+.hidden-title {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.mySlides{
+    display: none;
+}
+
+.prev , .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover , .next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from{
+        opacity: 0.4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fade{
+    from{
+        opacity: 0.4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width:300px){
+    .prev, .next, .text{
+        font-size: 10px;
+    }
+    .dot{
+        height: 10px;
+        width: 10px;
+    }
+}
+
+/* Making it responsive */
+@media (max-width: 768px) {
+    .block {
+        height: auto;
+        width: 90%;
+    }
+
+    .inside-block {
+        flex-direction: column;
+    }
+
+    .text,
+    .image {
+        width: 100%;
+    }
+
+    .image {
+        height: auto;
+    }
+
+    #hiddenDiv {
+        height: auto;
+        width: 90%;
+    }
+}
