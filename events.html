@@ -8,7 +8,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <!-- <link href="product.css" rel="stylesheet"> -->
+        
         <!-- Bootstrap CSS v5.2.1 -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -18,107 +18,10 @@
         />
         <link href="css/events.css" rel="stylesheet">
 
-        <style>
-
-header.masthead {
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
-  text-align: center;
-  color: #fff;
-  background-image: url("images/index_events.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-}
-header.masthead .masthead-subheading {
-  font-size: 1.5rem;
-  font-style: italic;
-  line-height: 1.5rem;
-  margin-bottom: 25px;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-header.masthead .masthead-heading {
-  font-size: 3.25rem;
-  font-weight: 700;
-  line-height: 3.25rem;
-  margin-bottom: 2rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-@media (min-width: 768px) {
-  header.masthead {
-    padding-top: 17rem;
-    padding-bottom: 12.5rem;
-  }
-  header.masthead .masthead-subheading {
-    font-size: 2.25rem;
-    font-style: italic;
-    line-height: 2.25rem;
-    margin-bottom: 2rem;
-  }
-  header.masthead .masthead-heading {
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 4.5rem;
-    margin-bottom: 4rem;
-  }
-}
-            
-.block{
-    margin-top: 3em;
-    height: 60vh;
-    width: 90vw;
-    margin-bottom: 3em;
-}
-
-
-.inside-block{
-    height: 50vh;
-    width: 90vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.text{
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    font-weight: bold;
-    color: gray;
-}
-
-.image{
-    height: 350px;
-    width: 500px;
-}
-
-.text:hover{
-    transform: scale(1.05);
-    transition: all 1s ease-in-out 1s;
-}
-
-.image:hover{
-    transform: scale(1.05);
-    transition: all 1s ease-in-out 1s;
-}
-
-#hiddenDiv{
-    font-size: 1.5rem;
-    color: grey;
-    display: none;
-}
-
-.text:active{
-    background-color: aqua;
-}
-        </style>
-       <!-- <link rel="stylesheet" href="aboutUs.css"> -->
     </head>
 
-    <body>
-        <header>
+    <body class="bg-primary">
+      
             <!-- place navbar here -->
             <nav class="navbar navbar-expand-md navbar-dark bg-primary" style="padding: 20px;">
                 <div class="container-fluid">
@@ -132,7 +35,7 @@ header.masthead .masthead-heading {
                         <div class="navbar-nav ms-auto">
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         <a class="nav-link " aria-current="page" href="#">About Us</a>
-                        <a class="nav-link active fs-5" aria-current="page" href="#">Events</a>
+                        <a class="nav-link fs-5" aria-current="page" href="#">Events</a>
                         <a class="nav-link" aria-current="page" href="clubs.html">Clubs</a>
                     </div>
                  
@@ -140,6 +43,7 @@ header.masthead .masthead-heading {
                 
               </nav>
  <!-- Masthead-->
+
  <header class="masthead">
   <div class="container">
       <div class="masthead-subheading">Welcome To LJ Events</div>
@@ -148,22 +52,21 @@ header.masthead .masthead-heading {
   </div>
 </header>
 
-        </header>
-
+    <div class="container events_container">
         <div class="main-title">
-          <h1>Cultural Events</h1>
+          <h1>LJ's Prominent Events</h1>
       </div>
       <div class="section">
           <div class="carousel-section carousel-1">
               <div class="slideshow-container">
                   <div class="mySlides"> 
-                      <img src="C:\Users\Krish\OneDrive\Pictures\Saved Pictures\Japan.jpg" alt="Image Not Found">
+                      <img src="images/chess1.jpg" alt="Image Not Found">
                   </div>
                   <div class="mySlides">
-                      <img src="C:\Users\Krish\OneDrive\Pictures\Saved Pictures\Forest.jpg" alt="Image Not Found">
+                      <img src="images/chess2.jpg" alt="Image Not Found">
                   </div>
                   <div class="mySlides">
-                      <img src="C:\Users\Krish\OneDrive\Pictures\Saved Pictures\sekiro.jpg" alt="Image Not Found">
+                      <img src="images/chess3.jpg" alt="Image Not Found">
                       <!-- <img src="images/4.avif" alt="Image Not Found"> -->
                   </div>
                   <a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
@@ -174,33 +77,35 @@ header.masthead .masthead-heading {
                   <span class="dot" onclick="currentSlide(2)"></span>
                   <span class="dot" onclick="currentSlide(3)"></span>
               </div>
-          <script src="fakescript.js"></script>
+          
           </div>
           <div class="text-section">
-              <h2 class="title">LJ-Lumina</h2>
+              <h2 class="title">Lumina 2024</h2>
               <p class="description">
-                  LJ Lumina is an annual cultural spectacle at LJ University, drawing crowds to its sprawling grounds for an extravaganza of fashion and performance. With mesmerizing ramp walks showcasing the latest trends and captivating performances spanning dance, music, and drama, the event epitomizes creativity and talent. Against the backdrop of LJ University's iconic architecture, models exude confidence on the runway, while performers captivate audiences with dynamic choreography and compelling narratives. LJ Lumina stands as a testament to LJ University's dedication to fostering artistic expression and providing a vibrant platform for talent to shine.
+                Lumina 2024 was a spectacular cultural extravaganza that took place on LJ Campus. It was an evening filled with mesmerizing performances, delicious cuisine, and a celebration of diversity and unity within our LJ Connect community. From captivating dance routines to soul-stirring musical performances, Lumina 2024 showcased the incredible talent and cultural richness of our community. Thank you to everyone who attended and made this event a resounding success!
               </p>
           </div>
       </div>
   
       <div class="section">
           <div class="text-section">
-              <h2 class="title">LJ-Lumina</h2>
+              <h2 class="title">LJ Innovation Vllage</h2>
               <p class="description">
-                  LJ Lumina is an annual cultural spectacle at LJ University, drawing crowds to its sprawling grounds for an extravaganza of fashion and performance. With mesmerizing ramp walks showcasing the latest trends and captivating performances spanning dance, music, and drama, the event epitomizes creativity and talent. Against the backdrop of LJ University's iconic architecture, models exude confidence on the runway, while performers captivate audiences with dynamic choreography and compelling narratives. LJ Lumina stands as a testament to LJ University's dedication to fostering artistic expression and providing a vibrant platform for talent to shine.
+                LJ Innovation Village, our premier technical event, was held on LJ Campus. It brought together innovators, tech enthusiasts, and aspiring entrepreneurs for a day of exploration, learning, and collaboration. Attendees had the opportunity to engage in hands-on workshops, participate in hackathons, and hear from industry experts about the latest trends and innovations. LJ Innovation Village sparked creativity, inspired innovation, and paved the way for future breakthroughs. Thank you to all the participants and partners who made this event a huge success!
+
+
               </p>
           </div>
           <div class="carousel-section carousel-2">
               <div class="slideshow-container">
                   <div class="mySlides"> 
-                      <img src="C:\Users\Krish\OneDrive\Pictures\Saved Pictures\Japan.jpg" alt="Image Not Found">
+                      <img src="images/chess1.jpg" alt="Image Not Found">
                   </div>
                   <div class="mySlides">
-                      <img src="C:\Users\Krish\OneDrive\Pictures\Saved Pictures\Forest.jpg" alt="Image Not Found">
+                      <img src="images/chess2.jpg" alt="Image Not Found">
                   </div>
                   <div class="mySlides">
-                      <img src="C:\Users\Krish\OneDrive\Pictures\Saved Pictures\sekiro.jpg" alt="Image Not Found">
+                      <img src="images/chess3.jpg" alt="Image Not Found">
                       <!-- <img src="images/4.avif" alt="Image Not Found"> -->
                   </div>
                   <a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
@@ -219,13 +124,13 @@ header.masthead .masthead-heading {
           <div class="carousel-section carousel-3">
               <div class="slideshow-container">
                   <div class="mySlides"> 
-                      <img src="C:\Users\Krish\OneDrive\Pictures\Saved Pictures\Japan.jpg" alt="Image Not Found">
+                      <img src="images/chess1.jpg" alt="Image Not Found">
                   </div>
                   <div class="mySlides">
-                      <img src="C:\Users\Krish\OneDrive\Pictures\Saved Pictures\Forest.jpg" alt="Image Not Found">
+                      <img src="images/chess2.jpg" alt="Image Not Found">
                   </div>
                   <div class="mySlides">
-                      <img src="C:\Users\Krish\OneDrive\Pictures\Saved Pictures\sekiro.jpg" alt="Image Not Found">
+                      <img src="images/chess3.jpg" alt="Image Not Found">
                       <!-- <img src="images/4.avif" alt="Image Not Found"> -->
                   </div>
                   <a class="prev" onclick="plusSlides(-1,3)">&#10094;</a>
@@ -238,12 +143,48 @@ header.masthead .masthead-heading {
               </div>
             </div>
             <div class="text-section">
-              <h2 class="title">LJ-Lumina</h2>
+              <h2 class="title">Carpe-Diem</h2>
               <p class="description">
-                LJ Lumina is an annual cultural spectacle at LJ University, drawing crowds to its sprawling grounds for an extravaganza of fashion and performance. With mesmerizing ramp walks showcasing the latest trends and captivating performances spanning dance, music, and drama, the event epitomizes creativity and talent. Against the backdrop of LJ University's iconic architecture, models exude confidence on the runway, while performers captivate audiences with dynamic choreography and compelling narratives. LJ Lumina stands as a testament to LJ University's dedication to fostering artistic expression and providing a vibrant platform for talent to shine.
+                Carpe-Diem, LJ Connect's exhilarating sports event, took place on LJ Campus. It was a day filled with intense competition, thrilling matches, and unforgettable moments on the field. Participants showcased their skills and sportsmanship in a variety of sports, including basketball, soccer, and volleyball. Congratulations to all the participants for their dedication and passion, and thank you to everyone who supported and cheered on the teams!
               </p>
             </div>
           </div>
-          <script src="js/events.js"></script>
+
+     </div>
+
+
+    <footer class="container py-4 text-center ">
+    <div class="row">
+      <div class="col-md">
+                  <h5 class="text-light">Important Stuff</h5>
+                  <ul class="list-unstyled text-small">
+                    <li><a class="link-dark text-decoration-none" href="#">Programs</a></li>
+                    <li><a class="link-dark text-decoration-none" href="#">Apprenticeships</a></li>
+                    <li><a class="link-dark text-decoration-none" href="#">Research</a></li>
+                  </ul>
+                </div>
+                <div class="col-md">
+                  <h5 class="text-light">Resources</h5>
+                  <ul class="list-unstyled text-small">
+                    <li><a class="link-dark text-decoration-none" href="#faq">Admissions</a></li>
+                    <li><a class="link-dark text-decoration-none" href="#contact">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="col-md">
+                  <h5 class="text-light">About</h5>
+                  <ul class="list-unstyled text-small">
+                    <li><a class="link-dark text-decoration-none" href="#about">About Us</a></li>
+                    <li><a class="link-dark text-decoration-none" href="#">Establishment</a></li>
+                    <li><a class="link-dark text-decoration-none" href="#">Board of Directors</a></li>
+                  </ul>
+                </div>
+              </div>
+              <small class="text-muted">© 2024 LJ Connect</small>
+              <!-- Bootstrap JavaScript Libraries -->
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+            <script src="js/events.js"></script>
+  
 </body>
 </html>
